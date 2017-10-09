@@ -11,19 +11,14 @@ int main() {
     int part = height - line;
 
     for (int space = 0; space < part; space++) {
-      printf("%s", " ");
+      printf(" ");
     }
     for (int hash = 0; hash < height - part; hash++) {
-      printf("%s", "#");
+      printf("#");
     }
-
-    printf("%s", " ");
-
+    printf("  ");
     for (int hash = 0; hash < height - part; hash++) {
-      printf("%s", "#");
-    }
-    for (int space = 0; space < part; space++) {
-      printf("%s", " ");
+      printf("#");
     }
     printf("\n");
   }

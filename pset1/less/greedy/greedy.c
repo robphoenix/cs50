@@ -6,7 +6,7 @@ int main() {
   change *= 100;
   int coins = 0;
   int cur = 0;
-  float denominations[4] = {25, 20, 5, 1};
+  float denominations[4] = {25, 10, 5, 1};
   while (change) {
     float denomination = denominations[cur];
     while (change >= denomination) {
