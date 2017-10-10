@@ -16,8 +16,14 @@ CFLAGS  = -g -Wall
 # -lcs50 cs50 lib
 LFLAGS = -lcs50
 
+# check50 identifier
+IDENTIFIER = cs50/2017/fall/mario/more
+
 all: $(TARGET)
 $(TARGET): $(TARGET).c ; $(CC) $(CFLAGS) -o $(TARGET).out $(TARGET).c $(LFLAGS)
+
+test:
+	check50 -l $(IDENTIFIER)
 
 # housekeeping
 clean:

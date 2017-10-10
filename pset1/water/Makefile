@@ -19,8 +19,14 @@ LFLAGS = -lcs50
 # the name to use for both the target source file, and the output file:
 TARGET = water
 
+# check50 identifier
+IDENTIFIER = cs50/2017/x/water
+
 all: $(TARGET)
 $(TARGET): $(TARGET).c ; $(CC) $(CFLAGS) -o $(TARGET).out $(TARGET).c $(LFLAGS)
+
+test:
+	check50 -l $(IDENTIFIER)
 
 # housekeeping
 clean:

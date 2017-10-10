@@ -17,8 +17,14 @@ CFLAGS  = -g -Wall
 # -lm    math lib
 LFLAGS = -lcs50 -lm
 
+# check50 identifier
+IDENTIFIER = cs50/2017/x/greedy
+
 all: $(TARGET)
 $(TARGET): $(TARGET).c ; $(CC) $(CFLAGS) -o $(TARGET).out $(TARGET).c $(LFLAGS)
+
+test:
+	check50 -l $(IDENTIFIER)
 
 # housekeeping
 clean:

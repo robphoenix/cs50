@@ -29,26 +29,15 @@ sudo -H pip install check50
 This only works locally for me, it asks for `submit50` otherwise, which is
 installed but it can't find. :woman_shrugging:
 
-To run against the `greedy` exercise for instance...
+Use `make test` to run `check50`
 
 ```sh
-check50 -l cs50/2017/x/greedy
-```
-
-Output:
-
-```sh
-:) greedy exists
-:) greedy compiles
-:) input of 0.41 yields output of 4
-:) input of 0.01 yields output of 1
-:) input of 0.15 yields output of 2
-:) input of 1.6 yields output of 7
-:) input of 23 yields output of 92
-:) input of 4.2 yields output of 18
-:) rejects a negative input like -.1
-:) rejects a non-numeric input of "foo"
-:) rejects a non-numeric input of ""
+~/cs50/pset1/hello
+> make test
+check50 -l cs50/2017/fall/hello
+:) hello.c exists.
+:) hello.c compiles.
+:) prints "hello, world\n"
 ```
 
 ## Example
