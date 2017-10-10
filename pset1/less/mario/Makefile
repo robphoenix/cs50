@@ -22,6 +22,7 @@ IDENTIFIER = cs50/2017/fall/mario/less
 all: $(TARGET)
 $(TARGET): $(TARGET).c ; $(CC) $(CFLAGS) -o $(TARGET).out $(TARGET).c $(LFLAGS)
 
+# requires check50 (pip install check50)
 test:
 	check50 -l $(IDENTIFIER)
 
