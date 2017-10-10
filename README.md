@@ -2,17 +2,18 @@
 
 ## INSTALLATION
 
-```
+Requires asciidoctor in order to build the docs.
+
+```sh
+sudo apt-get install asciidoctor # or gem install asciidoctor
 git clone --recursive https://github.com/robphoenix/cs50.git
 cd cs50/libcs50
 sudo make install
 ```
 
-I had to install asciidoctor for this to work; `sudo apt install asciidoctor`.
-
 ## EXAMPLE
 
-```
+```c
 #include <cs50.h>
 #include <stdio.h>
 
@@ -25,13 +26,4 @@ int main() {
     printf("You entered: %s\n", s);
   }
 }
-```
-
-## VIM KEY MAPPING
-
-My leader key is `<space>` and so `<space>50` will compile the current c file,
-linking it with the cs50 lib, as `<filename>.out`.
-
-```vim
-autocmd FileType c nnoremap <silent> <leader>50 :!clear;gcc % ~/code/C/cs50/libcs50/src/cs50.c -o %:r.out<CR>
 ```
