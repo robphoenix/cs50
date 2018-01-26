@@ -7,9 +7,7 @@ int main() {
     height = get_int("Height: ");
   }
   for (int line = 1; line < height + 1; ++line) {
-
     int part = height - line;
-
     for (int space = 0; space < part; space++) {
       printf(" ");
     }
